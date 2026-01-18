@@ -17,13 +17,13 @@ app = FastAPI(title="Royal Bank")
 class AccountCreate(BaseModel):
     account_no: int
     username: str
-    balance: float
+    balance: int
 
 
 class TransactionCreate(BaseModel):
     source: int
     dest: int
-    amount: float
+    amount: int
 
 
 # ---------- ACCOUNTS ----------
